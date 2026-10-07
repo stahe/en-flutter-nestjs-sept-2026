@@ -779,23 +779,23 @@
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
 <span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">rdvmedecins-nestjs-server</span><span class="p">/</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="err">├──</span> <span class="n">package</span><span class="p">.</span><span class="n">json</span>                  <span class="c"># npm dependencies and scripts</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="err">├──</span> <span class="n">tsconfig</span><span class="p">.</span><span class="n">json</span>                 <span class="c"># QZXW2HTML compiler configuration CVHlwZVNjcmlwdAZQX</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="err">├──</span> <span class="n">nest-cli</span><span class="p">.</span><span class="n">json</span>                 <span class="c"># CLI configuration NestJS</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="err">├──</span> <span class="p">.</span><span class="n">env</span><span class="p">.</span><span class="n">example</span>                  <span class="c"># .env configuration file template</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="err">├──</span> <span class="n">database</span><span class="p">/</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="err">│</span>   <span class="err">└──</span> <span class="n">dbrdvmedecins</span><span class="p">.</span><span class="n">sql</span>         <span class="c"># database creation script</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="err">└──</span> <span class="n">src</span><span class="p">/</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="err">├──</span> <span class="n">main</span><span class="p">.</span><span class="n">ts</span>                   <span class="c"># server entry point</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="err">├──</span> <span class="n">app</span><span class="p">.</span><span class="n">module</span><span class="p">.</span><span class="n">ts</span>             <span class="c"># root module</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="err">├──</span> <span class="n">config</span><span class="p">/</span>                   <span class="c"># database connection</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="err">├──</span> <span class="n">entities</span><span class="p">/</span>                 <span class="c"># entities TypeORM (one class per table)</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="err">├──</span> <span class="n">domain</span><span class="p">/</span>                   <span class="c"># business objects</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="err">├──</span> <span class="n">repositories</span><span class="p">/</span>             <span class="c"># data access (DAO layer)</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="err">├──</span> <span class="n">metier</span><span class="p">/</span>                   <span class="c"># business layer</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="err">├──</span> <span class="n">web</span><span class="p">/</span>                      <span class="c"># JSON controller and response templates</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="err">└──</span> <span class="n">auth</span><span class="p">/</span>                     <span class="c"># JWT authentication and roles</span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>rdvmedecins-nestjs-server/
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>├── package.json                  # npm dependencies and scripts
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>├── tsconfig.json                 # QZXW2HTML compiler configuration CVHlwZVNjcmlwdAZQX
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>├── nest-cli.json                 # CLI configuration NestJS
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>├── .env.example                  # .env configuration file template
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>├── database/
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>│   └── dbrdvmedecins.sql         # database creation script
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>└── src/
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>    ├── main.ts                   # server entry point
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    ├── app.module.ts             # root module
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>    ├── config/                   # database connection
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    ├── entities/                 # entities TypeORM (one class per table)
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>    ├── domain/                   # business objects
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>    ├── repositories/             # data access (DAO layer)
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    ├── metier/                   # business layer
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    ├── web/                      # JSON controller and response templates
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    └── auth/                     # JWT authentication and roles
 </code></pre></div></td></tr></table></div>
 <p>Each subfolder of <em>[src/]</em> contains its own <em>[README.md] file</em>, which summarizes the purpose of the files it contains. The source code for these files is not covered in this document.</p>
 <p>In the <em>[rdvmedecins-nestjs-server]</em> folder, type the following commands in a terminal:</p>
