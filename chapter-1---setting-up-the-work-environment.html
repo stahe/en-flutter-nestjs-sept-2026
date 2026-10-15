@@ -426,10 +426,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#213-create-on-an-android-emulator" class="md-nav__link">
+  <a href="#213-create-an-android-emulator" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.3. Create on an Android emulator
+        2.1.3. Create an Android emulator
       
     </span>
   </a>
@@ -673,13 +673,13 @@
 
 <p><img src="images/10000000000004BE000001EA71832475.png" width="602" height="243" style="width:15.921cm;height:6.426cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004BE000001EA71832475.png" /></p>
 <ul>
-  <li>In [1-3], specify the project targets for [1 – application Android, 2- application de bureau 3 – application web];
+  <li>In [1-3], specify the project targets for [1 – Android application, 2 – desktop application, 3 – web application];
   </li>
 </ul>
 
 <p><img src="images/1000000000000231000003007D8C16C6.png" width="281" height="384" style="width:7.422cm;height:10.16cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000231000003007D8C16C6.png" /></p>
 <ul>
-  <li>to [4], the created project. VSCode automatically downloads SDK from Flutter;
+  <li>to [4], the created project. VSCode automatically downloads the Flutter SDK;
   </li>
 </ul>
 
@@ -722,7 +722,7 @@
 <a id="__codelineno-2-10" name="__codelineno-2-10"></a>
 <a id="__codelineno-2-11" name="__codelineno-2-11"></a>• No issues found!
 </code></pre></div></td></tr></table></div>
-<p>Each line begins with a symbol: <em>[√]</em> (everything is fine), <em>[!]</em> (warning: an element is missing, which doesn’t necessarily prevent the code from working), or <em>[X]</em> (error). For this course, the relevant lines are <em>[Flutter]</em>, <em>[Android toolchain]</em> (compilation for a phone), <em>[Android]</em>, and <em>[Connected device]</em> (at least one device detected, specifically the phone). The lines <em>[Chrome]</em> (web target) and <em>[Visual Studio]</em> (Windows target) apply only to those targets: A <em>[!]</em> or <em>[X]</em> on a target you are not using can be ignored.</p>
+<p>Each line begins with a symbol: <em>[√]</em> (everything is fine), <em>[!]</em> (warning: an element is missing, which doesn’t necessarily prevent the code from working), or <em>[X]</em> (error). For this course, the relevant lines are <em>[Flutter]</em>, <em>[Android toolchain] (compilation for an [Android] phone) and [Connected device]</em> (at least one device detected, specifically the phone). The lines <em>[Chrome]</em> (web target) and <em>[Visual Studio]</em> (Windows target) apply only to those targets: A <em>[!]</em> or <em>[X]</em> on a target you are not using can be ignored.</p>
 <p>If <em>[Android toolchain]</em> reports “cmdline-tools component is missing,” install <em>[Android SDK Command-line Tools]</em> (see below); if it reports “Android license status unknown,” accept the licenses (step 5). The <strong><em>[flutter doctor -v]</em></strong> command provides details on each check.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
@@ -821,7 +821,7 @@
 <a id="__codelineno-4-6" name="__codelineno-4-6"></a>Chrome (web)                  • chrome        • web-javascript • Google Chrome 153.0.8010.48
 <a id="__codelineno-4-7" name="__codelineno-4-7"></a>Edge (web)                    • edge          • web-javascript • Microsoft Edge 153.0.4234.48
 </code></pre></div></td></tr></table></div>
-<p>In column 2, you’ll find the IDs of the recognized <em>devices devices</em>. To launch the Flutter app on one of them:</p>
+<p>In column 2, you’ll find the IDs of the recognized devices. To launch the Flutter app on one of them:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>flutter run -d &lt;device_id&gt;
 </code></pre></div>
 <p>For example, to launch the app in the Chrome browser with the identifier (chrome):</p>
@@ -832,15 +832,15 @@
 <p>You may not have installed the Android SDK required by Flutter. We’ll now describe how to install it.</p>
 <p><span id="android-studio-et-les-outils-de-ligne-de-commande-android" name="android-studio-et-les-outils-de-ligne-de-commande-android" class="odt-bookmark-anchor"></span></p>
 <h3 id="212-android-studio-and-android-command-line-tools">2.1.2. <span style="color: #1f4d78">Android Studio and Android Command-Line Tools</span></h3>
-<p>The mobile target for this course is a <em>[Android]</em> phone. To compile the app and install it on this phone, <em>[Flutter]</em> requires SDK and <em>[Android]</em>, which are installed along with <em>[Android Studio]</em>, Google’s development environment. <em>[Android Studio]</em> is not used for writing code—the editor remains <em>[VSCode]</em>—it is used here only to install and update SDK and <em>[Android]</em>.</p>
+<p>The mobile target for this course is a <em>[Android]</em> phone. To compile the app and install it on this phone, <em>[Flutter] requires the [Android] SDK, which is installed</em> along with <em>[Android Studio]</em>, Google’s development environment. <em>[Android Studio]</em> is not used for writing code—the editor remains <em>[VSCode]</em>—it is used here only to install and update the [Android] SDK.</p>
 <ol>
-  <li><i><b>[Android Studio]</b></i>: Download it for free from [https://developer.android.com/studio] and then install it. When you launch it for the first time, the wizard will offer a standard installation: accept it, and it will download SDK and <i>[Android]</i>.
+  <li><i><b>[Android Studio]</b></i>: Download it for free from [https://developer.android.com/studio] and then install it. When you launch it for the first time, the wizard will offer a standard installation: accept it, and it will download the [Android] SDK.
   </li>
 </ol>
 
 <p><img src="images/100000000000061F000004EF3DA687E7.png" width="470" height="379" style="width:12.441cm;height:10.021cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000061F000004EF3DA687E7.png" /></p>
 <ol>
-  <li>Open <i><b>[SDK Manager] </b></i>from <i>[Android Studio] </i>(the <i>[Tools / SDK Manager]</i> menu when a project is open, or <i>[More Actions / SDK Manager] </i>from the home screen): This is the tool that installs and updates the components of SDK and <i>[Android]</i>.
+  <li>Open <i><b>[SDK Manager] </b></i>from <i>[Android Studio] </i>(the <i>[Tools / SDK Manager]</i> menu when a project is open, or <i>[More Actions / SDK Manager] </i>from the home screen): This is the tool that installs and updates the components of the [Android] SDK.
   </li>
   <li><i>[SDK Platforms]</i> tab: Verify that a recent <i>[Android]</i> platform is installed (the <i>[Flutter]</i> documentation specifies version 36 at the time of writing).
   </li>
@@ -850,7 +850,7 @@
 <ol>
   <li><i>[SDK Tools]</i> tab: Check <i><b>[Android SDK Command-line Tools (latest)]</b></i>, <i>[Android SDK Build-Tools]</i>, and <i>[Android SDK Platform-Tools] </i>(as well as <i>[Android Emulator] </i>if you want to test on an emulator), then click <i>[Apply]</i>. The documentation for <i>[Flutter] </i>also recommends <i>[CMake] </i>and <i>[NDK (Side by side)]</i>. It is the <i>[Android SDK Command-line Tools] packages </i>that are missing when <i>[flutter doctor] </i>displays “cmdline-tools component is missing.”
   </li>
-  <li>Accept the licenses for SDK and <i>[Android] </i>by typing the following command in a terminal within the Flutter project, then answering <i>“[y]” </i>to each question until you see the message “All SDK package licenses accepted.”:
+  <li>Accept the licenses for the [Android] SDK<i> </i>by typing the following command in a terminal within the Flutter project, then answering <i>“[y]” </i>to each question until you see the message “All SDK package licenses accepted.”:
 
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-3" name="__codelineno-7-3"></a>flutter doctor --android-licenses
 </code></pre></div></td></tr></table></div>
@@ -858,12 +858,12 @@
   </li>
 </ol>
 
-<p><strong><em>[Remarque]</em></strong>: With version 23.0 of <em>[Android SDK Command-line Tools]</em>, the command above may terminate immediately, without prompting for anything, displaying “The --licenses option is no longer needed.” This is a known issue in <em>[Flutter]</em> (issues 191558 and 191487 on github.com/flutter/flutter). Workaround: In <em>[SDK Manager]</em>, <em>[SDK Tools]</em> tab, check <em>[Show Package Details]</em>, replace version 23.0 of <em>[Android SDK Command-line Tools]</em> with version 22.0, click on <em>[Apply],</em> and then rerun the command.</p>
+<p><strong><em>[Note]</em></strong>: With version 23.0 of <em>[Android SDK Command-line Tools]</em>, the command above may terminate immediately, without prompting for anything, displaying “The --licenses option is no longer needed.” This is a known issue in <em>[Flutter]</em> (issues 191558 and 191487 on github.com/flutter/flutter). Workaround: In <em>[SDK Manager]</em>, <em>[SDK Tools]</em> tab, check <em>[Show Package Details]</em>, replace version 23.0 of <em>[Android SDK Command-line Tools]</em> with version 22.0, click on <em>[Apply],</em> and then rerun the command.</p>
 <p><span id="tester-sur-un-emulateur-android" name="tester-sur-un-emulateur-android" class="odt-bookmark-anchor"></span></p>
-<h3 id="213-create-on-an-android-emulator">2.1.3. <span style="color: #4f81bd">Create<span style="color: #1f4d78"> on an Android emulator</span></span></h3>
+<h3 id="213-create-an-android-emulator">2.1.3. <span style="color: #4f81bd">Create an Android emulator</span></h3>
 <p>If you don’t have a phone, you can test the app on a <em>[Android]</em> emulator: a virtual phone that runs in a window on your computer. <em>[Android Studio]</em> installs the <em>[Android Emulator]</em> program (if it was checked in the <em>[SDK Manager]</em>, see above) but does not provide a ready-to-use virtual device: you must create one.</p>
 <ol>
-  <li><i><b>[Prérequis]</b></i>: Virtualization must be enabled in the computer’s <i>[BIOS]</i>, and under <i>[Windows]</i>, the <i>[Plateforme de l&#x27;hyperviseur Windows]</i> feature must be checked (<i>[Panneau de configuration / Programmes / Activer ou désactiver des fonctionnalités Windows]</i>), which requires a restart. Otherwise, the emulator will not start or will remain very slow.
+  <li><i><b>[Prerequisite]</b></i>: Virtualization must be enabled in the computer’s <i>[BIOS]</i>, and under <i>[Windows]</i>, the <i>[Windows Hypervisor Platform]</i> feature must be checked (<i>[Control Panel / Programs / Turn Windows features on or off]</i>), which requires a restart. Otherwise, the emulator will not start or will remain very slow.
   </li>
   <li>Open <i><b>[Device Manager] </b></i>from <i>[Android Studio]</i>: <i>[More Actions / Virtual Device Manager] </i>from the home screen, or <i>[Tools / Device Manager] </i>when a project is open (depending on the version: <i>[View / Tool Windows / Device Manager]</i>).
   </li>
@@ -911,7 +911,7 @@
 <a id="__codelineno-10-6" name="__codelineno-10-6"></a>  Chrome (web)                  • chrome        • web-javascript • Google Chrome 153.0.8010.48
 <a id="__codelineno-10-7" name="__codelineno-10-7"></a>  Edge (web)                    • edge          • web-javascript • Microsoft Edge 153.0.4234.48
 </code></pre></div></td></tr></table></div>
-<p><strong><em>[Remarque]</em></strong>: if <em>[flutter devices]</em> does not display the emulator but instead shows the message “Device emulator-5554 is offline,” the emulator has not finished starting up, or <em>[adb]</em> (the tool that connects the computer to the device, installed along with <em>[Android SDK Platform-Tools]</em>) is in an inconsistent state. Try the following in order: (1) wait for the welcome screen to appear, then rerun the command; (2) restart <em>[adb]</em> using the following three commands (in <em>[Windows]</em>, within <em>[PowerShell]</em>), with the last one displaying “device” rather than “offline”; (3) In the <em>[Device Manager]</em>, under the device’s <em>[⋮]</em> menu, select <em>[Cold Boot Now]</em>, or even <em>[Wipe Data]</em> as a last resort.</p>
+<p><strong><em>[Note]</em></strong>: if <em>[flutter devices]</em> does not display the emulator but instead shows the message “Device emulator-5554 is offline,” the emulator has not finished starting up, or <em>[adb]</em> (the tool that connects the computer to the device, installed along with <em>[Android SDK Platform-Tools]</em>) is in an inconsistent state. Try the following in order: (1) wait for the welcome screen to appear, then rerun the command; (2) restart <em>[adb]</em> using the following three commands (in <em>[Windows]</em>, within <em>[PowerShell]</em>), with the last one displaying “device” rather than “offline”; (3) In the <em>[Device Manager]</em>, under the device’s <em>[⋮]</em> menu, select <em>[Cold Boot Now]</em>, or even <em>[Wipe Data]</em> as a last resort.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
 <span class="normal"><a href="#__codelineno-11-2">2</a></span>
 <span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>&amp; "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe" kill-server
@@ -919,7 +919,7 @@
 <a id="__codelineno-11-3" name="__codelineno-11-3"></a>&amp; "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe" devices
 </code></pre></div></td></tr></table></div>
 <p>If the problem persists, use <em>[where.exe adb]</em> to verify that no other <em>[adb]</em>, of a different version, is present in the <em>[PATH]</em>: Two versions of <em>[adb]</em> competing for the connection cause this issue.</p>
-<p>Once the emulator is recognized, the application launches on it with the following command. Note: In the emulator, <em>[localhost]</em> refers to the emulator itself and not the computer; the “URL on the server” field must contain <em>[http://10.0.2.2:8080]</em> (see Chapter 5).</p>
+<p>Once the emulator is recognized, the application launches on it with the following command. Note: In the emulator, <em>[localhost]</em> refers to the emulator itself and not the computer; the “Server URL” field must contain <em>[http://10.0.2.2:8080]</em> (see Chapter 5).</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>flutter run -d emulator-5554
 </code></pre></div>
 <p><img src="images/100000000000036900000506BCBC0E04.png" width="262" height="386" style="width:6.93cm;height:10.209cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000036900000506BCBC0E04.png" /></p>
@@ -927,9 +927,9 @@
 <h3 id="214-preparing-the-android-phone">2.1.4. <span style="color: #1f4d78">Preparing the Android phone</span></h3>
 <p>To run the app on a real <em>[Android]</em> phone, the phone must be set to allow control from the computer:</p>
 <ol>
-  <li>Enable developer options: open <i>[Paramètres / À propos du téléphone]</i>, then tap <i>[Numéro de build]</i> several times (usually 7) until the phone indicates that you are a developer. The exact labels vary by manufacturer.
+  <li>Enable developer options: open <i>[Settings / About phone]</i>, then tap <i>[Build number]</i> several times (usually 7) until the phone indicates that you are a developer. The exact labels vary by manufacturer.
   </li>
-  <li>Enable <i>[Débogage USB] </i>in the <i>[Options pour les développeurs] </i>menu (added in the previous step).
+  <li>Enable <i>[USB debugging] </i>in the <i>[Developer options] </i>menu (added in the previous step).
   </li>
   <li>Connect the phone to the computer using a USB cable that transfers data (not just charges the phone), and accept the USB debugging permission request on the phone. On Windows, if the phone is not recognized, install the manufacturer’s driver USB (“OEM USB drivers,” see [https://developer.android.com/studio/run/oem-usb]).
   </li>
