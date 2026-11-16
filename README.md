@@ -2,7 +2,7 @@
 
 This repository refers to the course **“A Client/Server Example - Flutter / NestJS (2026)”**, published at:
 
-**https://stahe.github.io/flutter-nestjs-sept-2026/**
+**https://stahe.github.io/en-flutter-nestjs-sept-2026/**
 
 ## Overview
 
